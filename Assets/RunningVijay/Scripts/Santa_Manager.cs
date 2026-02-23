@@ -14,17 +14,9 @@ public class Santa_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.R)))
-        { 
-          Santa_animator.SetTrigger("Santa_Run"); 
-        }
+        Santa_animator.SetTrigger("Santa_Run"); 
 
-        else if ((Input.GetKeyDown(KeyCode.J)))
-        {
-            Santa_animator.SetTrigger("Santa_Jump");
-        }
-
-        else if ((Input.GetKeyDown(KeyCode.D)))
+        if ((Input.GetKeyDown(KeyCode.D)))
         {
             Santa_animator.SetTrigger("Santa_Die");
         }

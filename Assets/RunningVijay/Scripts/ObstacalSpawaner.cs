@@ -13,7 +13,7 @@ public class ObstacalSpawaner : MonoBehaviour
     {
         //SpawnObstacals();
 
-        InvokeRepeating(nameof(SpawnObstacals), 1f, Random.Range(2f , 6f));
+        InvokeRepeating(nameof(SpawnObstacals), 1f, Random.Range(2f , 3f));
     }
 
     // Update is called once per frame

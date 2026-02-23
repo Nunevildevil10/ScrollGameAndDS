@@ -4,6 +4,7 @@ public class Santa_Movement : MonoBehaviour
 {
     float jumpForce;
     private Rigidbody2D rd2d;
+    public Animator Santa_animator;
 
     void Start()
     {
@@ -22,5 +23,6 @@ public class Santa_Movement : MonoBehaviour
     void Jump()
     {
         rd2d.linearVelocity = Vector2.up * jumpForce;
+        Santa_animator.SetTrigger("Santa_Jump");
     }
 }
