@@ -32,6 +32,6 @@ public class ObstacalSpawaner : MonoBehaviour
         // Spawn Random Objects
 
         int num = Random.Range(0, enamyPrefabs.Length);
-        Instantiate(enamyPrefabs[num], new Vector3(spawnerPoint.position.x, spawnerPoint.position.y, spawnerPoint.position.z), Quaternion.identity);
+        Instantiate(enamyPrefabs[num], new Vector3(spawnerPoint.position.x, spawnerPoint.position.y, 0f), Quaternion.identity);
     }
 }

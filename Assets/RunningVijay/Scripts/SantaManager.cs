@@ -7,7 +7,7 @@ public class SantaManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        sanataAnimator.Play("ASantaRun");
     }
 
     // Update is called once per frame
@@ -40,5 +40,20 @@ public class SantaManager : MonoBehaviour
                 sanataAnimator.Play("ASantaIdle");
             }
      //  }
+    }
+
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            sanataAnimator.Play("ASentaDead");
+            Invoke(nameof(GameOver), 0.4f);
+        }
+    }
+
+    private void GameOver()
+    {
+        Time.timeScale = 0.2f;
     }
 }
