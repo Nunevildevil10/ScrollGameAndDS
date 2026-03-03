@@ -6,6 +6,7 @@ public class ScrollBG : MonoBehaviour
     public GameObject square;
     public Material bgMatrial;
     public float speed;
+    public PlayerController playerController;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,7 +21,9 @@ public class ScrollBG : MonoBehaviour
     void Update()
     {
         //square.transform.position = new Vector3(square.transform.position.x+speed*Time.deltaTime, square.transform.position.y, square.transform.position.z);
-        bgMatrial.mainTextureOffset = new Vector2(bgMatrial.mainTextureOffset.x + speed * Time.deltaTime, bgMatrial.mainTextureOffset.y);
+        //if(!playerController.isGameOver)
+        if (!PlayerController.Instance.isGameOver)
+            bgMatrial.mainTextureOffset = new Vector2(bgMatrial.mainTextureOffset.x + speed * Time.deltaTime, bgMatrial.mainTextureOffset.y);
 
     }
 }

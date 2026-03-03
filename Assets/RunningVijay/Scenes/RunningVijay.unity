@@ -329,6 +329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SantaManager
   sanataAnimator: {fileID: 125217554}
+  playerController: {fileID: 125217558}
 --- !u!50 &125217556
 Rigidbody2D:
   serializedVersion: 5
@@ -414,6 +415,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f585c482a705a74e8f503d344a59ad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  isGrounded: 0
+  isGameOver: 0
 --- !u!1 &343778010
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,6 +738,7 @@ MonoBehaviour:
   square: {fileID: 1665375279}
   bgMatrial: {fileID: 2100000, guid: 1ade2fd6c28acc249989567b9efe8dec, type: 2}
   speed: 0
+  playerController: {fileID: 125217558}
 --- !u!4 &1072489924
 Transform:
   m_ObjectHideFlags: 0

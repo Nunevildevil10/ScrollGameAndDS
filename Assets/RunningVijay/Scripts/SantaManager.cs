@@ -4,6 +4,7 @@ public class SantaManager : MonoBehaviour
 {
 
     public Animator sanataAnimator;
+    public PlayerController playerController;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -48,7 +49,16 @@ public class SantaManager : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             sanataAnimator.Play("ASentaDead");
-            Invoke(nameof(GameOver), 0.4f);
+
+            //playerController.isGameOver = true;
+            PlayerController.Instance.isGameOver = true;
+
+            //Invoke(nameof(GameOver), 0.4f);
+        }
+        else if (collision.gameObject.CompareTag("Ground"))
+        {
+            //playerController.isGrounded = true;
+            PlayerController.Instance.isGrounded = true;
         }
     }
 

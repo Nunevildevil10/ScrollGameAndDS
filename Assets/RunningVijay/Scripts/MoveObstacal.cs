@@ -12,6 +12,7 @@ public class MoveObstacal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(this.transform.position.x + speed * Time.deltaTime, this.transform.position.y, this.transform.position.z);
+        if (!PlayerController.Instance.isGameOver)
+            transform.position = new Vector3(this.transform.position.x + speed * Time.deltaTime, this.transform.position.y, this.transform.position.z);
     }
 }

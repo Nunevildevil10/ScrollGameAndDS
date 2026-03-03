@@ -6,9 +6,23 @@ public class PlayerController : MonoBehaviour
     BoxCollider2D bc2d;
     float jumpForce;
     Animator animator;
+
+    public bool isGrounded;
+    public bool isGameOver;
+
+    public static PlayerController Instance;
+
+    private void Awake()
+    {
+        //if (Instance == null)
+        Instance = this;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        isGrounded = true;
+        isGameOver = false;
         jumpForce = 7f;
         rb2d = GetComponent<Rigidbody2D>();
         //bc2d = GetComponent<BoxCollider2D>();
@@ -27,7 +41,11 @@ public class PlayerController : MonoBehaviour
 
     void jump()
     {
-        rb2d.linearVelocity = Vector2.up * jumpForce;
+        if (isGrounded && !isGameOver)
+        {
+            isGrounded = false;
+            rb2d.linearVelocity = Vector2.up * jumpForce;
+        }
 
     }
 }
