@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class ScrollBG : MonoBehaviour
 {
-
-    public GameObject square;
     public Material bgMatrial;
     public float speed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created

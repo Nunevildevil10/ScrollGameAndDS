@@ -6,18 +6,21 @@ public class ObstacalSpawaner : MonoBehaviour
     public Transform spawnerPoint;
     public GameObject[] enamyPrefabs;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     // Made by Unity
     void Start()
     {
-        SpawnObstacals();
+        //SpawnObstacals();
+
+        InvokeRepeating(nameof(SpawnObstacals), 1f, Random.Range(2f , 3f));
     }
 
     // Update is called once per frame
     //Made by Unity
     void Update()
     {
-    
+       
     }
 
 
@@ -30,6 +33,8 @@ public class ObstacalSpawaner : MonoBehaviour
         // Spawn Random Objects
 
         int num = Random.Range(0, enamyPrefabs.Length);
+        
+
         Instantiate(enamyPrefabs[num], new Vector3(spawnerPoint.position.x, spawnerPoint.position.y, spawnerPoint.position.z), Quaternion.identity);
     }
 }
