@@ -16,7 +16,7 @@ public class Colider_Dictector : MonoBehaviour
 
        else if (collision.gameObject.CompareTag("Ground"))
        {
-           IsGrounded = true; 
+            santa_Movement.IsGrounded = true; 
        }
     }
 
