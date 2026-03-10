@@ -10,7 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8490224559310018685}
   - component: {fileID: 6617433437612973367}
+<<<<<<< HEAD
   - component: {fileID: 7086707843635863318}
+=======
+>>>>>>> parent of e66aa35 (SANTA)
   m_Layer: 0
   m_Name: Square
   m_TagString: Enemy
@@ -92,6 +95,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!61 &7086707843635863318
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -138,3 +142,5 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+=======
+>>>>>>> parent of e66aa35 (SANTA)

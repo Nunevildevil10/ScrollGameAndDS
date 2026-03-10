@@ -10,8 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5428908889851271193}
   - component: {fileID: 3859835506302481667}
+<<<<<<< HEAD
   - component: {fileID: -6853260833188241291}
   - component: {fileID: -4691305417726928339}
+=======
+>>>>>>> parent of e66aa35 (SANTA)
   m_Layer: 0
   m_Name: Crystal
   m_TagString: Enemy
@@ -93,6 +96,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &-6853260833188241291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,3 +155,5 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.97, y: 0.78}
   m_EdgeRadius: 0
+=======
+>>>>>>> parent of e66aa35 (SANTA)

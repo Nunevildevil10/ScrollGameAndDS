@@ -208,6 +208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 125217553}
   - component: {fileID: 125217552}
+<<<<<<< HEAD
   - component: {fileID: 125217554}
   - component: {fileID: 125217555}
   - component: {fileID: 125217557}
@@ -217,6 +218,11 @@ GameObject:
   m_Layer: 0
   m_Name: Santa
   m_TagString: Player
+=======
+  m_Layer: 0
+  m_Name: Snata
+  m_TagString: Untagged
+>>>>>>> parent of e66aa35 (SANTA)
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -289,12 +295,17 @@ Transform:
   m_GameObject: {fileID: 125217551}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -7.64, y: -3, z: 0}
+=======
+  m_LocalPosition: {x: -7.64, y: -3.3, z: 0}
+>>>>>>> parent of e66aa35 (SANTA)
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!95 &125217554
 Animator:
   serializedVersion: 7
@@ -431,6 +442,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Colider_Dictector
   Santa_animator: {fileID: 125217554}
   santa_Movement: {fileID: 125217558}
+=======
+>>>>>>> parent of e66aa35 (SANTA)
 --- !u!1 &343778010
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,6 +596,56 @@ MonoBehaviour:
   - {fileID: 7125438537445209258, guid: c841048b72b70df4382b1f1558d86d4e, type: 3}
   - {fileID: 4910539438932488809, guid: 10359a0050f685241bfb8b52ceaeb915, type: 3}
   - {fileID: 6160787513104630099, guid: 1b1beeec328d15e4290052eed385b73c, type: 3}
+<<<<<<< HEAD
+=======
+--- !u!1 &1072489922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1072489924}
+  - component: {fileID: 1072489923}
+  m_Layer: 0
+  m_Name: ScrollBG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1072489923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072489922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd7c9c864d7c9094780c1cdfd728163b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScrollBG
+  square: {fileID: 1665375279}
+  bgMatrial: {fileID: 2100000, guid: 1ade2fd6c28acc249989567b9efe8dec, type: 2}
+  speed: 0
+--- !u!4 &1072489924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072489922}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of e66aa35 (SANTA)
 --- !u!1 &1215269737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,4 +1317,7 @@ SceneRoots:
   - {fileID: 1264146304}
   - {fileID: 791998209}
   - {fileID: 2009076418}
+<<<<<<< HEAD
   - {fileID: 2084877708}
+=======
+>>>>>>> parent of e66aa35 (SANTA)

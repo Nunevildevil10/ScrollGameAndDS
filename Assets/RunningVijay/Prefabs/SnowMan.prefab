@@ -10,8 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 727068113209973939}
   - component: {fileID: 3369924695865704867}
+<<<<<<< HEAD
   - component: {fileID: 3028741451208136548}
   - component: {fileID: 8496743152210868070}
+=======
+>>>>>>> parent of e66aa35 (SANTA)
   m_Layer: 0
   m_Name: SnowMan
   m_TagString: Enemy
@@ -93,6 +96,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &3028741451208136548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,3 +155,5 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.93, y: 2.1}
   m_EdgeRadius: 0
+=======
+>>>>>>> parent of e66aa35 (SANTA)

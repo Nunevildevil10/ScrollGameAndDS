@@ -10,8 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6923763942806615975}
   - component: {fileID: 7417233536474485261}
+<<<<<<< HEAD
   - component: {fileID: 5422228643292108969}
   - component: {fileID: -7322114037328060647}
+=======
+>>>>>>> parent of e66aa35 (SANTA)
   m_Layer: 0
   m_Name: Stone
   m_TagString: Enemy
@@ -93,6 +96,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &5422228643292108969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,3 +155,5 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.24, y: 0.78}
   m_EdgeRadius: 0
+=======
+>>>>>>> parent of e66aa35 (SANTA)

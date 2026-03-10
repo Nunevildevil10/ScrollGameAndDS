@@ -38,38 +38,3 @@ public class ObstacalSpawaner : MonoBehaviour
         Instantiate(enamyPrefabs[num], new Vector3(spawnerPoint.position.x, spawnerPoint.position.y, spawnerPoint.position.z), Quaternion.identity);
     }
 }
-
-public class EnemyChase : MonoBehaviour
-{
-    public float speed = 5f;
-    private Transform player;
-
-    void Start()
-    {
-        // Find player (tag your Santa GameObject as "Player")
-        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-        if (playerObj != null)
-        {
-            player = playerObj.transform;
-        }
-    }
-
-    void Update()
-    {
-        if (player == null) return;
-
-        // Move toward player position
-        float step = speed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(
-            transform.position,
-            player.position,
-            step
-        );
-
-        // Destroy if too far (performance)
-        if (Vector3.Distance(transform.position, player.position) > 30f)
-        {
-            Destroy(gameObject);
-        }
-    }
-}
